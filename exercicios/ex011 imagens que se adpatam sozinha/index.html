@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+
+</head>
+<body>
+    
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes, ou simplesmente aumente e diminua o seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png">
+
+        <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png">
+
+        <img src="imagens/grande.png" alt="imagem grande">
+    </picture>
+
+    <!-- a base é a imagem que quero carregar, e acima esta as imagens que vao substituir conforme o tamanho da tela, precisa ser para cima os sources, se nao, nao irá funcionar -->
+
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a repoduzir audios em HTML5</p>
+    <audio src="midia/hiphop.mp3" controls ></audio>
+
+    <h1>Reproduzindo Audio 2</h1>
+    <audio>
+
+        <source src="midia/hiphop.mp3" type="audio/mpeg">
+        <source src="midia/hiphop.ogg" type="audio/ogg">
+        <source src="midia/hiphop.wav3" type="audio/wav"> <!-- MUITO PESADO -->
+
+        <p>infelizmente seu navegador nao suporta o audio. <a href="midia/hiphop.mp3"> clique aqui para baixar o arquivo</a></p>
+        
+    </audio>
+    
+
+</body>
+</html>

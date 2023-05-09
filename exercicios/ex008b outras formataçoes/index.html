@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+
+<body>
+
+    <h1>Outras formatações</h1>
+    <h2>Código-Fonte</h2>
+    <p>Ocomando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript</p> <!-- a largura de quando vc seleciona uma letra e fica azul, esse expassamento é maior com a tag CODE, oq facilita de ler, fonte mono espaçada, otima para ler codigo -->
+
+    <p>Ocomando document.getElementById('teste') é escrito em linguagem JavaScript</p>
+    <pre>
+        <code>
+    num = int(input('Digite umm numero'))
+    if num  % 2 == 0:
+         print(f'O numero {num} é PAR')
+     else:
+        print(f'O numero {num} é IMPAR')
+    printf('Fim do programa')
+        </code>
+    </pre>
+
+    <!-- a tag PRE, identa o texto no site igual esta no codigo -->
+    <h2>Citações SIMPLES</h2>
+    <p>Como diria um pai de um amigo: <q>O computador é um burro muito rápido.</q> </p> <!-- ussar a tag Q da sentido ao texto, entao é melhor usar tag Q do que colocar as aspas manualmente USADO PRINCIPALMENTE EM CITAÇÕES -->
+    <h2>Citações COMPLETAS</h2>
+    <p>Segundo Maurício Samy Silva, no seu livro Fundamentos de HTML5 e CSS3:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=1&dq=HTML&printsec=frontcover"> <!-- o site vai saber que é uma citaçao desse livro, posso tbm colocar o link para preservar o direito autoral do criador do conteudo -->
+        Já sabemos que HTML é uma linguagem de marcação que o desenvolvedor(você) usa para se comunicar com o agente de usuário, que por sua vez trasnforma a marcação em algo que o usuário (o internauta) entende, como uma página de um site
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando.</p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+
+</body>
+
+</html>

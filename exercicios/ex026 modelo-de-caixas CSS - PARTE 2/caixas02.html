@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+
+    <!-- essa aula em conjunto com dev tools, fica mt boa de se entender o conceito de caixas em html-->
+
+    <!-- dev tools é uma extençao do google-->
+    <style>
+        h1{
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border: 10px solid darkslategray;
+
+            padding: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            margin: 10px 10px 10px 10px; 
+            /*
+                shorthand, primeiro vem top - right - bottom - left 
+
+                se todos os valores sao iguais, voce pode informar so o primeiro
+            */
+
+            margin: auto;
+            /*
+                se for uma caixa que vc quer centralizar, funciona se colocar um margin: auto;
+            */
+        }
+
+        a{
+            border: 10px solid red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        .caixa2{
+            /*
+            margin-top: 20px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;*/
+
+            margin: 20px auto 10px auto; 
+            /*
+                dessa forma ele tbm centraliza usando o margin auto            */
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+        }
+
+        .caixa3{
+            margin-top: 40px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+
+            outline: 5px dashed salmon;
+        }
+
+        /*mudando a caracteristica dos elementos*/
+
+        .caixa4{
+            display: inline;
+        }
+
+        .caixa5{
+            display: inline;
+        }
+
+        .caixa6{
+            display: inline;
+        }
+
+        .link-box-level{
+            display: block;
+        }
+
+        /*mudando a caracteristica dos elementos novamente*/
+
+        .link-inline-block{
+            display: inline-block;
+
+            width: 200px;
+            height: 100px;
+
+            /*continua inline, contudo da para mudar umas caracteristicas do block, como width height*/
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <h1>Exemplo de caixa Box-level 1</h1>
+
+    <h1 class="caixa2">Exemplo de caixa Box-level 2</h1>
+
+    <h1 class="caixa3">Exemplo de caixa Box-level 3</h1>
+    <br>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links sao exemplos de caixas inline-leve</a> vamos ver como tudo isso funciona</p>
+
+    <br><br>
+    <h2>Agora vamos mudar a caracteristica padrao dos elementos</h2>
+
+    <br><br><br>
+    <h1 class="caixa4">Exemplo de caixa Box-level 1</h1>
+    <br><br><br><br>
+    <h1 class="caixa5">Exemplo de caixa Box-level 2</h1>
+
+    <br><br><br><br>
+
+    <h1 class="caixa6">Exemplo de caixa Box-level 3</h1>
+
+    <br><br><br>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#" class="link-box-level">links sao exemplos de caixas inline-leve</a> vamos ver como tudo isso funciona</p>
+
+    <br><br>
+    <h2>Agora vamos mudar a caracteristica padrao dos elementos novamente</h2>
+
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#" class="link-inline-block">links sao exemplos de caixas inline-leve</a> vamos ver como tudo isso funciona</p>
+
+</body>
+</html>
